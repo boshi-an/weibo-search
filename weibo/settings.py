@@ -12,7 +12,7 @@ DEFAULT_REQUEST_HEADERS = {
     'Accept':
     'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-US;q=0.7',
-    'cookie': 'your cookie'
+    'cookie': '_T_WM=81611866147; XSRF-TOKEN=5f9d33; WEIBOCN_FROM=1110006030; SCF=As76HuhM9WCU5NqOrY4U-vdYyPuYegnSHzAwTeAB0nhLVKklVnHlvFWLerGM4tKgMxFNfcxV92WErYfmNBMhXFQ.; SUB=_2A25O3XbSDeRhGeFG61oW9ybNzDSIHXVqPhqarDV6PUNbktANLRnnkW1NfncYtYqSFytuFk9I8K0pARbd9ol1lc0V; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5YOxs21See1CDnDmLqhNzm5JpX5KMhUgL.FoMRehnNS0npS0n2dJLoI7yFdNSQIHvWdntt; SSOLoginState=1675167362; ALF=1677759362; MLOGIN=1; M_WEIBOCN_PARAMS=luicode=20000174&uicode=20000174'
 }
 ITEM_PIPELINES = {
     'weibo.pipelines.DuplicatesPipeline': 300,
@@ -26,7 +26,7 @@ ITEM_PIPELINES = {
 # 如'keyword_list.txt'，txt文件中每个关键词占一行
 KEYWORD_LIST = ['迪丽热巴']  # 或者 KEYWORD_LIST = 'keyword_list.txt'
 # 要搜索的微博类型，0代表搜索全部微博，1代表搜索全部原创微博，2代表热门微博，3代表关注人微博，4代表认证用户微博，5代表媒体微博，6代表观点微博
-WEIBO_TYPE = 1
+WEIBO_TYPE = 0
 # 筛选结果微博中必需包含的内容，0代表不筛选，获取全部微博，1代表搜索包含图片的微博，2代表包含视频的微博，3代表包含音乐的微博，4代表包含短链接的微博
 CONTAIN_TYPE = 0
 # 筛选微博的发布地区，精确到省或直辖市，值不应包含“省”或“市”等字，如想筛选北京市的微博请用“北京”而不是“北京市”，想要筛选安徽省的微博请用“安徽”而不是“安徽省”，可以写多个地区，
